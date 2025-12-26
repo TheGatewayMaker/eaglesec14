@@ -445,9 +445,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-24 md:py-32">
+      <footer className="bg-slate-950 text-white py-24 md:py-32">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-16">
             <div>
               <div className="flex items-center gap-3 mb-8">
                 <img
@@ -547,7 +547,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border-t border-slate-700 pt-8">
+          <div className="border-t border-slate-800 pt-8">
             <p className="text-center text-base font-bold opacity-60">
               © 2024 Eagle Security Guards. All rights reserved.
             </p>
