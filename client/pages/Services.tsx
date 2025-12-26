@@ -201,12 +201,26 @@ export default function Services() {
                   </li>
                 </ul>
               </div>
-              <div className="overflow-hidden rounded-xl shadow-lg h-64 md:h-96">
+              <div className="overflow-hidden rounded-xl shadow-lg h-64 md:h-96 group relative">
                 <img
                   src="https://images.pexels.com/photos/3880225/pexels-photo-3880225.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Mobile security escort team"
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src="https://i.ibb.co/FbrC5zqp/eaglesecurityoriginallogomonochrome.png"
+                    alt="Eagle Security Logo"
+                    className="w-24 md:w-32 h-24 md:h-32 object-contain opacity-75"
+                  />
+                </div>
+                <Link
+                  to="/contact"
+                  className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-6 py-3 font-black text-sm md:text-base rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:shadow-lg flex items-center gap-2 group-hover:gap-3"
+                >
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>
