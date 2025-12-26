@@ -134,62 +134,62 @@ export default function WhyChooseUs() {
       </section>
 
       {/* Comparison */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-h2 text-primary text-center mb-16 font-bold">
+          <h2 className="text-4xl font-black text-slate-900 text-center mb-16">
             What Sets Us Apart
           </h2>
 
           <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">
                     Source of Personnel
                   </h4>
-                  <p className="text-foreground">
+                  <p className="text-slate-700 font-bold">
                     Armed forces of Pakistan with military discipline
                   </p>
                 </div>
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">
                     Vetting Process
                   </h4>
-                  <p className="text-foreground">
+                  <p className="text-slate-700 font-bold">
                     Comprehensive screening and database verification
                   </p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">
                     Training Standards
                   </h4>
-                  <p className="text-foreground">
+                  <p className="text-slate-700 font-bold">
                     Critical security requirement training and protocols
                   </p>
                 </div>
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">
                     Geographic Reach
                   </h4>
-                  <p className="text-foreground">
+                  <p className="text-slate-700 font-bold">
                     Multiple offices across Pakistan for local expertise
                   </p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">Service Range</h4>
-                  <p className="text-foreground">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">Service Range</h4>
+                  <p className="text-slate-700 font-bold">
                     Static guards, bodyguards, escorts, and equipment
                   </p>
                 </div>
-                <div className="p-6 bg-slate-50 rounded-lg border border-border">
-                  <h4 className="font-bold text-primary mb-2">Client Base</h4>
-                  <p className="text-foreground">
+                <div className="p-8 bg-white rounded-xl border-2 border-slate-200 shadow-sm hover:shadow-md transition-all">
+                  <h4 className="font-black text-slate-900 mb-3">Client Base</h4>
+                  <p className="text-slate-700 font-bold">
                     Government, banking, media, and corporate sectors
                   </p>
                 </div>
@@ -200,17 +200,17 @@ export default function WhyChooseUs() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-16 md:py-24">
+      <section className="bg-gradient-to-r from-slate-900 to-slate-800 py-24 md:py-32">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-h2 text-primary-foreground mb-6 font-bold">
+          <h2 className="text-4xl md:text-5xl text-white mb-6 font-black">
             Experience the Eagle Security Difference
           </h2>
-          <p className="text-xl text-primary-foreground mb-8 opacity-95">
+          <p className="text-xl text-gray-200 mb-10 opacity-90 font-bold">
             Contact us today for a security consultation
           </p>
           <Link
             to="/contact"
-            className="bg-accent text-accent-foreground px-8 py-4 font-bold text-lg rounded-lg hover:opacity-90 transition-opacity inline-block"
+            className="bg-accent text-accent-foreground px-10 py-5 font-black text-lg rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
           >
             Get in Touch
           </Link>
