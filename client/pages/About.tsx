@@ -51,32 +51,32 @@ export default function About() {
       </section>
 
       {/* Vision, Mission, Values Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-slate-850 to-slate-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-black text-slate-900 text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-16">
             Our Vision & Mission
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* Vision */}
-            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-8 md:p-10 rounded-xl border-2 border-slate-600 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <Lightbulb className="w-8 h-8 text-accent flex-shrink-0" />
-                <h3 className="text-2xl font-black text-slate-900">Vision</h3>
+                <h3 className="text-2xl font-black text-white">Vision</h3>
               </div>
-              <p className="text-slate-700 leading-relaxed font-bold">
+              <p className="text-gray-300 leading-relaxed font-bold">
                 Vigilance by the dedicated and quality conscious guards is the
                 ultimate answer to security.
               </p>
             </div>
 
             {/* Mission */}
-            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-8 md:p-10 rounded-xl border-2 border-slate-600 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <Target className="w-8 h-8 text-accent flex-shrink-0" />
-                <h3 className="text-2xl font-black text-slate-900">Mission</h3>
+                <h3 className="text-2xl font-black text-white">Mission</h3>
               </div>
-              <p className="text-slate-700 leading-relaxed font-bold">
+              <p className="text-gray-300 leading-relaxed font-bold">
                 Being managed by competent ex-army officers with wide experience
                 in designing and implementing effective security systems, we aim
                 to select and deploy experienced, well-trained personnel to
@@ -85,14 +85,14 @@ export default function About() {
             </div>
 
             {/* Core Values */}
-            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-8 md:p-10 rounded-xl border-2 border-slate-600 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <Compass className="w-8 h-8 text-accent flex-shrink-0" />
-                <h3 className="text-2xl font-black text-slate-900">
+                <h3 className="text-2xl font-black text-white">
                   Commitment
                 </h3>
               </div>
-              <p className="text-slate-700 leading-relaxed font-bold">
+              <p className="text-gray-300 leading-relaxed font-bold">
                 Providing most reliable, efficient and cost effective guarding
                 services with dedication to quality and integrity throughout
                 Pakistan.
