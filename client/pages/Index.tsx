@@ -195,8 +195,8 @@ export default function Home() {
       </section>
 
       {/* Value Proposition Section */}
-      <section className="bg-card text-foreground relative overflow-hidden py-20 md:py-32 border-y border-border transition-colors duration-300">
-        <div className="absolute inset-0 opacity-3">
+      <section className="relative overflow-hidden py-20 md:py-32 border-y border-border transition-colors duration-300">
+        <div className="absolute inset-0">
           <div
             className="absolute inset-0"
             style={{
@@ -206,6 +206,7 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           ></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/40"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -213,11 +214,11 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6 md:mb-8 text-foreground">
               Why Professional Security Matters
             </h2>
-            <p className="text-base md:text-xl font-bold opacity-90 leading-relaxed mb-6 text-muted-foreground">
+            <p className="text-base md:text-xl font-bold opacity-95 leading-relaxed mb-6 text-foreground">
               In a world where security has become critical, a personalized
               approach is key to ensuring you get the protection you deserve.
             </p>
-            <p className="text-base md:text-lg font-bold opacity-80 leading-relaxed text-muted-foreground">
+            <p className="text-base md:text-lg font-bold opacity-90 leading-relaxed text-foreground">
               From static guards and elite bodyguards to mobile escorts and
               advanced security equipment, we provide comprehensive, tailored
               solutions for every security need backed by decades of expertise.
