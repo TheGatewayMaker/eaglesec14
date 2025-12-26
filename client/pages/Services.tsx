@@ -202,21 +202,16 @@ export default function Services() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-6">
                   <img
                     src="https://i.ibb.co/8gTBwZC9/eaglesecurityoriginallogomonochrome.png"
                     alt="Eagle Security Logo"
                     className="w-32 md:w-44 h-32 md:h-44 object-contain opacity-100"
                   />
-                </div>
-                <Link
-                  to="/contact"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                >
                   <span className="bg-accent text-accent-foreground px-8 py-3 font-black text-lg rounded-lg hover:shadow-lg transition-all duration-300">
                     Learn More
                   </span>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
