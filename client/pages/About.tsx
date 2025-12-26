@@ -19,23 +19,32 @@ export default function About() {
 
       {/* Background Section */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <div className="mb-16">
-            <h2 className="text-h2 font-bold text-primary mb-6">
-              Our Background
-            </h2>
-            <p className="text-foreground leading-relaxed text-lg mb-6">
-              Eagle Security Guards was established in 1992. The company has the
-              NOC to operate all over Pakistan including AJK. Today the company
-              is one of the leading private security companies in Pakistan
-              upholding its credible name to provide most reliable, efficient
-              and cost effective guarding services.
-            </p>
-            <p className="text-foreground leading-relaxed text-lg">
-              Our head office is located in Islamabad with regional/branch
-              offices in almost all major cities of Pakistan, ensuring
-              comprehensive coverage and local expertise throughout the nation.
-            </p>
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-4xl font-black text-slate-900 mb-8">
+                Our Background
+              </h2>
+              <p className="text-slate-700 leading-relaxed text-lg font-bold mb-6">
+                Eagle Security Guards was established in 1992. The company has the
+                NOC to operate all over Pakistan including AJK. Today the company
+                is one of the leading private security companies in Pakistan
+                upholding its credible name to provide most reliable, efficient
+                and cost effective guarding services.
+              </p>
+              <p className="text-slate-700 leading-relaxed text-lg font-bold">
+                Our head office is located in Islamabad with regional/branch
+                offices in almost all major cities of Pakistan, ensuring
+                comprehensive coverage and local expertise throughout the nation.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-xl shadow-lg h-96">
+              <img
+                src="https://images.pexels.com/photos/3706640/pexels-photo-3706640.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Professional security personnel"
+                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              />
+            </div>
           </div>
         </div>
       </section>
