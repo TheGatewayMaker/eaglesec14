@@ -50,37 +50,37 @@ export default function Contact() {
       </section>
 
       {/* Contact Information and Form */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Contact Info Cards */}
-            <div className="bg-slate-50 p-8 rounded-lg border border-border">
-              <MapPin className="w-8 h-8 text-accent mb-4" />
-              <h3 className="text-h3 font-bold text-primary mb-3">
+            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+              <MapPin className="w-10 h-10 text-accent mb-6" />
+              <h3 className="text-2xl font-black text-slate-900 mb-4">
                 Head Office
               </h3>
-              <p className="text-foreground mb-2">Islamabad</p>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-slate-700 font-bold mb-2">Islamabad</p>
+              <p className="text-slate-600 font-bold">
                 Central coordination hub for all operations
               </p>
             </div>
 
-            <div className="bg-slate-50 p-8 rounded-lg border border-border">
-              <Phone className="w-8 h-8 text-accent mb-4" />
-              <h3 className="text-h3 font-bold text-primary mb-3">Phone</h3>
-              <p className="text-foreground mb-1">For inquiries and quotes</p>
-              <p className="text-muted-foreground text-sm">
+            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+              <Phone className="w-10 h-10 text-accent mb-6" />
+              <h3 className="text-2xl font-black text-slate-900 mb-4">Phone</h3>
+              <p className="text-slate-700 font-bold mb-2">For inquiries and quotes</p>
+              <p className="text-slate-600 font-bold">
                 Contact through our form or visit office
               </p>
             </div>
 
-            <div className="bg-slate-50 p-8 rounded-lg border border-border">
-              <Clock className="w-8 h-8 text-accent mb-4" />
-              <h3 className="text-h3 font-bold text-primary mb-3">
+            <div className="bg-white p-10 rounded-xl border-2 border-slate-200 shadow-md hover:shadow-lg hover:border-accent transition-all duration-300">
+              <Clock className="w-10 h-10 text-accent mb-6" />
+              <h3 className="text-2xl font-black text-slate-900 mb-4">
                 Response Time
               </h3>
-              <p className="text-foreground mb-1">Quick turnaround</p>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-slate-700 font-bold mb-2">Quick turnaround</p>
+              <p className="text-slate-600 font-bold">
                 We prioritize all security consultations
               </p>
             </div>
