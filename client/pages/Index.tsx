@@ -9,6 +9,7 @@ import {
   Award,
   Target,
 } from "lucide-react";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -194,8 +195,8 @@ export default function Home() {
       </section>
 
       {/* Value Proposition Section */}
-      <section className="bg-card text-foreground relative overflow-hidden py-20 md:py-32 border-y border-border transition-colors duration-300">
-        <div className="absolute inset-0 opacity-3">
+      <section className="relative overflow-hidden py-20 md:py-32 border-y border-border transition-colors duration-300">
+        <div className="absolute inset-0">
           <div
             className="absolute inset-0"
             style={{
@@ -205,6 +206,7 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           ></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/40"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -212,11 +214,11 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6 md:mb-8 text-foreground">
               Why Professional Security Matters
             </h2>
-            <p className="text-base md:text-xl font-bold opacity-90 leading-relaxed mb-6 text-muted-foreground">
+            <p className="text-base md:text-xl font-bold opacity-95 leading-relaxed mb-6 text-foreground">
               In a world where security has become critical, a personalized
               approach is key to ensuring you get the protection you deserve.
             </p>
-            <p className="text-base md:text-lg font-bold opacity-80 leading-relaxed text-muted-foreground">
+            <p className="text-base md:text-lg font-bold opacity-90 leading-relaxed text-foreground">
               From static guards and elite bodyguards to mobile escorts and
               advanced security equipment, we provide comprehensive, tailored
               solutions for every security need backed by decades of expertise.
@@ -229,29 +231,64 @@ export default function Home() {
       <section className="py-16 md:py-28 bg-background transition-colors duration-300">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-accent text-accent-foreground p-8 md:p-12 rounded-xl md:rounded-2xl text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <p className="text-4xl md:text-6xl font-black mb-2 md:mb-3">
-                30+
-              </p>
-              <p className="text-base md:text-2xl font-bold leading-relaxed">
-                Years of Experience
-              </p>
+            {/* Experience Card */}
+            <div className="group relative bg-card border-2 border-accent text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-accent to-yellow-500 mb-6 md:mb-8 shadow-md">
+                  <AnimatedCounter
+                    targetNumber={30}
+                    suffix="+"
+                    duration={2000}
+                    className="text-5xl md:text-6xl font-black text-accent-foreground"
+                  />
+                </div>
+                <p className="text-base md:text-lg font-black text-foreground">
+                  Years of Experience
+                </p>
+                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                  Protecting businesses since 1992
+                </p>
+              </div>
             </div>
-            <div className="bg-blue-600 text-white p-8 md:p-12 rounded-xl md:rounded-2xl text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <p className="text-4xl md:text-6xl font-black mb-2 md:mb-3">
-                500+
-              </p>
-              <p className="text-base md:text-2xl font-bold leading-relaxed">
-                Trained Personnel
-              </p>
+
+            {/* Personnel Card */}
+            <div className="group relative bg-card border-2 border-blue-500 text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-blue-500 to-cyan-500 mb-6 md:mb-8 shadow-md">
+                  <AnimatedCounter
+                    targetNumber={500}
+                    suffix="+"
+                    duration={2000}
+                    className="text-5xl md:text-6xl font-black text-white"
+                  />
+                </div>
+                <p className="text-base md:text-lg font-black text-foreground">
+                  Trained Personnel
+                </p>
+                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                  Elite security professionals
+                </p>
+              </div>
             </div>
-            <div className="bg-slate-700 text-white p-8 md:p-12 rounded-xl md:rounded-2xl text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <p className="text-4xl md:text-6xl font-black mb-2 md:mb-3">
-                100+
-              </p>
-              <p className="text-base md:text-2xl font-bold leading-relaxed">
-                Corporate Clients
-              </p>
+
+            {/* Clients Card */}
+            <div className="group relative bg-card border-2 border-slate-600 text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-slate-700 to-slate-600 mb-6 md:mb-8 shadow-md">
+                  <AnimatedCounter
+                    targetNumber={100}
+                    suffix="+"
+                    duration={2000}
+                    className="text-5xl md:text-6xl font-black text-white"
+                  />
+                </div>
+                <p className="text-base md:text-lg font-black text-foreground">
+                  Corporate Clients
+                </p>
+                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                  Trusted by leading organizations
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -298,14 +335,14 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-card border-2 border-border p-6 md:p-10 rounded-xl md:rounded-2xl group hover:shadow-lg hover:border-accent hover:bg-accent/5 transition-all duration-300 animate-slide-in-from-bottom"
+                className="bg-card border-2 border-border p-6 md:p-10 group hover:shadow-lg hover:bg-slate-800 transition-all duration-300 animate-slide-in-from-bottom"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <item.icon className="w-10 md:w-12 h-10 md:h-12 text-accent mb-4 md:mb-6 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-300" />
-                <h3 className="text-lg md:text-2xl font-black text-foreground mb-3 md:mb-4 leading-tight group-hover:text-accent transition-colors duration-300">
+                <item.icon className="w-12 md:w-16 h-12 md:h-16 text-accent mb-4 md:mb-6 transition-transform duration-300" />
+                <h3 className="text-xl md:text-3xl font-black text-foreground mb-3 md:mb-4 leading-tight group-hover:text-accent transition-colors duration-300">
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-lg font-bold text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg font-bold text-muted-foreground leading-relaxed group-hover:text-yellow-300 transition-colors duration-300">
                   {item.desc}
                 </p>
               </div>
@@ -362,7 +399,7 @@ export default function Home() {
                   ].map((city) => (
                     <div
                       key={city}
-                      className="bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 text-center hover:bg-blue-700 transition-colors duration-200"
+                      className="bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 text-center hover:bg-gradient-to-br hover:from-accent hover:to-yellow-500 hover:text-accent-foreground transition-all duration-300"
                     >
                       <p className="font-black text-base md:text-lg leading-tight">
                         {city}
