@@ -276,24 +276,24 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-16 md:py-28 bg-background transition-colors duration-300">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <section className="py-12 sm:py-16 md:py-28 bg-background transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Experience Card */}
-            <div className="group relative bg-card border-2 border-accent text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+            <div className="group relative bg-card border-2 border-accent text-foreground p-5 sm:p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-accent to-yellow-500 mb-6 md:mb-8 shadow-md">
+                <div className="inline-flex items-center justify-center w-32 h-24 sm:w-40 sm:h-32 md:w-56 md:h-40 bg-gradient-to-br from-accent to-yellow-500 mb-4 sm:mb-6 md:mb-8 shadow-md">
                   <AnimatedCounter
                     targetNumber={30}
                     suffix="+"
                     duration={2000}
-                    className="text-5xl md:text-6xl font-black text-accent-foreground"
+                    className="text-4xl sm:text-5xl md:text-6xl font-black text-accent-foreground"
                   />
                 </div>
-                <p className="text-base md:text-lg font-black text-foreground">
+                <p className="text-sm sm:text-base md:text-lg font-black text-foreground">
                   Years of Experience
                 </p>
-                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                <p className="text-xs font-bold text-muted-foreground mt-1 sm:mt-2 md:mt-3">
                   Protecting businesses since 1992
                 </p>
               </div>
