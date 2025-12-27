@@ -300,40 +300,40 @@ export default function Home() {
             </div>
 
             {/* Personnel Card */}
-            <div className="group relative bg-card border-2 border-blue-500 text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+            <div className="group relative bg-card border-2 border-blue-500 text-foreground p-5 sm:p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-blue-500 to-cyan-500 mb-6 md:mb-8 shadow-md">
+                <div className="inline-flex items-center justify-center w-32 h-24 sm:w-40 sm:h-32 md:w-56 md:h-40 bg-gradient-to-br from-blue-500 to-cyan-500 mb-4 sm:mb-6 md:mb-8 shadow-md">
                   <AnimatedCounter
                     targetNumber={500}
                     suffix="+"
                     duration={2000}
-                    className="text-5xl md:text-6xl font-black text-white"
+                    className="text-4xl sm:text-5xl md:text-6xl font-black text-white"
                   />
                 </div>
-                <p className="text-base md:text-lg font-black text-foreground">
+                <p className="text-sm sm:text-base md:text-lg font-black text-foreground">
                   Trained Personnel
                 </p>
-                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                <p className="text-xs font-bold text-muted-foreground mt-1 sm:mt-2 md:mt-3">
                   Elite security professionals
                 </p>
               </div>
             </div>
 
             {/* Clients Card */}
-            <div className="group relative bg-card border-2 border-slate-600 text-foreground p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
+            <div className="group relative bg-card border-2 border-slate-600 text-foreground p-5 sm:p-8 md:p-10 text-center hover:shadow-lg transition-all duration-300">
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-40 h-32 md:w-56 md:h-40 bg-gradient-to-br from-slate-700 to-slate-600 mb-6 md:mb-8 shadow-md">
+                <div className="inline-flex items-center justify-center w-32 h-24 sm:w-40 sm:h-32 md:w-56 md:h-40 bg-gradient-to-br from-slate-700 to-slate-600 mb-4 sm:mb-6 md:mb-8 shadow-md">
                   <AnimatedCounter
                     targetNumber={100}
                     suffix="+"
                     duration={2000}
-                    className="text-5xl md:text-6xl font-black text-white"
+                    className="text-4xl sm:text-5xl md:text-6xl font-black text-white"
                   />
                 </div>
-                <p className="text-base md:text-lg font-black text-foreground">
+                <p className="text-sm sm:text-base md:text-lg font-black text-foreground">
                   Corporate Clients
                 </p>
-                <p className="text-xs md:text-sm font-bold text-muted-foreground mt-2 md:mt-3">
+                <p className="text-xs font-bold text-muted-foreground mt-1 sm:mt-2 md:mt-3">
                   Trusted by leading organizations
                 </p>
               </div>
