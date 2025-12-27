@@ -15,10 +15,10 @@ export default function CompanyWiseDeployments() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-28 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300">
+    <section className="py-8 sm:py-10 md:py-16 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         {/* Section Title with Visual Styling */}
-        <div className="mb-12 sm:mb-16 md:mb-24">
+        <div className="mb-8 sm:mb-10 md:mb-12">
           <div className="flex items-center gap-3 md:gap-4 mb-4 sm:mb-6">
             <div className="w-1 md:w-1.5 h-10 md:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight">
@@ -32,22 +32,22 @@ export default function CompanyWiseDeployments() {
         </div>
 
         {/* Two Column Table */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Left Column */}
           <div className="bg-card border border-border rounded-lg overflow-hidden">
-            <div className="bg-pk-green-main text-white px-6 md:px-8 py-4 md:py-5">
-              <h3 className="text-lg md:text-xl font-black">Deployments</h3>
+            <div className="bg-pk-green-main text-white px-6 md:px-8 py-3 md:py-4">
+              <h3 className="text-base md:text-lg font-black">Deployments</h3>
             </div>
             <div className="divide-y divide-border">
               {leftData.map((item, i) => (
                 <div
                   key={i}
-                  className="px-6 md:px-8 py-4 md:py-5 hover:bg-accent/5 transition-colors duration-300 flex justify-between items-center"
+                  className="px-6 md:px-8 py-2.5 md:py-3 hover:bg-accent/5 transition-colors duration-300 grid grid-cols-2 gap-4"
                 >
-                  <span className="text-sm md:text-base font-black text-foreground">
+                  <span className="text-sm md:text-base font-black text-foreground text-left">
                     {item.company}
                   </span>
-                  <span className="text-sm md:text-base font-bold text-muted-foreground ml-4">
+                  <span className="text-sm md:text-base font-black text-foreground text-right">
                     {item.guards}
                   </span>
                 </div>
@@ -57,8 +57,8 @@ export default function CompanyWiseDeployments() {
 
           {/* Right Column */}
           <div className="bg-card border border-border rounded-lg overflow-hidden">
-            <div className="bg-accent text-white px-6 md:px-8 py-4 md:py-5">
-              <h3 className="text-lg md:text-xl font-black">
+            <div className="bg-accent text-white px-6 md:px-8 py-3 md:py-4">
+              <h3 className="text-base md:text-lg font-black">
                 Additional Deployments
               </h3>
             </div>
@@ -66,12 +66,12 @@ export default function CompanyWiseDeployments() {
               {rightData.map((item, i) => (
                 <div
                   key={i}
-                  className="px-6 md:px-8 py-4 md:py-5 hover:bg-accent/5 transition-colors duration-300 flex justify-between items-center"
+                  className="px-6 md:px-8 py-2.5 md:py-3 hover:bg-accent/5 transition-colors duration-300 grid grid-cols-2 gap-4"
                 >
-                  <span className="text-sm md:text-base font-black text-foreground">
+                  <span className="text-sm md:text-base font-black text-foreground text-left">
                     {item.company}
                   </span>
-                  <span className="text-sm md:text-base font-bold text-muted-foreground ml-4">
+                  <span className="text-sm md:text-base font-black text-foreground text-right">
                     {item.guards}
                   </span>
                 </div>
