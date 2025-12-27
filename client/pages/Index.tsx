@@ -400,7 +400,7 @@ export default function Home() {
       </section>
 
       {/* Presence Section */}
-      <section className="py-14 sm:py-20 md:py-48 bg-background transition-colors duration-300">
+      <section className="py-14 sm:py-20 md:py-48 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6">
           {/* Section Title with Visual Styling */}
           <div className="mb-10 sm:mb-16 md:mb-24">
