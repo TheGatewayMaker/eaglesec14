@@ -153,7 +153,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-5 py-3 bg-input border-2 border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300"
-                  placeholder="your@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
               </div>
