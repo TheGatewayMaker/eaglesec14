@@ -1,16 +1,8 @@
 import { Link } from "react-router-dom";
-import {
-  Shield,
-  Users,
-  Truck,
-  Lock,
-  CheckCircle2,
-  Zap,
-  Award,
-  Target,
-  ArrowRight,
-} from "lucide-react";
+import { Shield, Users, Truck, Lock, ArrowRight } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import CompanyWiseDeployments from "@/components/CompanyWiseDeployments";
+import GuardsByRegion from "@/components/GuardsByRegion";
 
 export default function Home() {
   return (
@@ -25,7 +17,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-12 sm:py-16 md:py-32 transition-colors duration-300">
         {/* Hero Background Image - Right Half Only */}
         <div
-          className="hidden md:block absolute right-0 top-0 w-[calc(50%+2rem)] h-full -mr-6"
+          className="hidden md:block absolute right-0 top-20 w-[calc(50%+2rem)] h-[85%] -mr-6"
           style={{
             backgroundImage:
               "url('https://images.pexels.com/photos/3880225/pexels-photo-3880225.jpeg?auto=compress&cs=tinysrgb&w=800')",
@@ -82,7 +74,7 @@ export default function Home() {
           {/* Section Title with Visual Styling */}
           <div className="mb-12 sm:mb-16 md:mb-24">
             <div className="flex items-center gap-3 md:gap-4 mb-4 sm:mb-6">
-              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight">
                 Our Security Services
               </h2>
@@ -215,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Value Proposition Section */}
-      <section className="relative overflow-hidden py-8 sm:py-12 md:py-20 border-y border-border transition-colors duration-300">
+      <section className="relative overflow-hidden py-8 sm:py-12 md:py-20 border-y border-pk-green-main/30 transition-colors duration-300">
         <div className="absolute inset-0">
           <div
             className="absolute inset-0"
@@ -314,7 +306,7 @@ export default function Home() {
           {/* Section Title with Visual Styling */}
           <div className="mb-12 sm:mb-16 md:mb-24">
             <div className="flex items-center gap-3 md:gap-4 mb-4 sm:mb-6">
-              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight">
                 Why Choose Eagle
               </h2>
@@ -327,37 +319,49 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {[
               {
-                icon: Award,
                 title: "Military Excellence",
                 desc: "Personnel from Pakistan's armed forces with proven expertise",
+                image:
+                  "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800",
               },
               {
-                icon: CheckCircle2,
                 title: "Thorough Vetting",
                 desc: "Comprehensive screening and background verification process",
+                image:
+                  "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
               },
               {
-                icon: Zap,
                 title: "24/7 Availability",
                 desc: "Round-the-clock support and emergency response team",
+                image:
+                  "https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=800",
               },
               {
-                icon: Target,
                 title: "Customized Solutions",
                 desc: "Tailored security plans for your specific requirements",
+                image:
+                  "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800",
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-card border border-border p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-accent/5"
+                className="relative aspect-square overflow-hidden border border-border transition-all duration-300 hover:shadow-lg hover:border-pk-green-main/60 group"
               >
-                <item.icon className="w-12 md:w-14 h-12 md:h-14 text-accent mb-4 md:mb-6" />
-                <h3 className="text-lg md:text-2xl font-black mb-3 md:mb-4 leading-tight">
-                  {item.title}
-                </h3>
-                <p className="text-sm md:text-base font-bold text-muted-foreground leading-relaxed">
-                  {item.desc}
-                </p>
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('${item.image}')`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/55 transition-colors duration-300"></div>
+                <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+                  <h3 className="text-xl md:text-2xl font-black mb-3 text-white leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm md:text-base font-bold text-white/95 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -370,7 +374,7 @@ export default function Home() {
           {/* Section Title with Visual Styling */}
           <div className="mb-12 sm:mb-16 md:mb-24">
             <div className="flex items-center gap-3 md:gap-4 mb-4 sm:mb-6">
-              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight">
                 National Presence
               </h2>
@@ -383,7 +387,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Head Office */}
-            <div className="bg-accent text-white p-8 md:p-12 transition-all duration-300 hover:shadow-lg hover:opacity-95">
+            <div className="bg-pk-green-main text-white p-8 md:p-12 transition-all duration-300 hover:shadow-lg hover:opacity-95">
               <p className="text-white font-black text-xs uppercase tracking-widest mb-4 md:mb-6 opacity-90">
                 Head Office
               </p>
@@ -412,7 +416,7 @@ export default function Home() {
                   ].map((city) => (
                     <div
                       key={city}
-                      className="bg-accent text-white px-4 md:px-5 py-2 md:py-2.5 text-center font-black text-xs md:text-sm leading-tight transition-all duration-300 hover:shadow-lg hover:opacity-90 rounded-none"
+                      className="bg-pk-green-main text-white px-4 md:px-5 py-2 md:py-2.5 text-center font-black text-xs md:text-sm leading-tight transition-all duration-300 hover:shadow-lg hover:opacity-90 rounded-none"
                     >
                       {city}
                     </div>
@@ -439,7 +443,7 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-10 sm:py-14 md:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-border">
+      <section className="py-10 sm:py-14 md:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-12 md:mb-16 text-center">
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight mb-4 md:mb-6">
@@ -475,6 +479,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Company Wise Deployments Section */}
+      <CompanyWiseDeployments />
+
+      {/* Guards By Region Section */}
+      <GuardsByRegion />
+
       {/* CTA Section */}
       <section className="py-14 md:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
@@ -507,7 +517,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-3xl md:text-6xl font-black leading-tight">
                 Our Head Office Location
               </h2>
