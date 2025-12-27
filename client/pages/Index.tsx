@@ -418,14 +418,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16">
             {/* Head Office */}
-            <div className="bg-gradient-to-br from-accent to-blue-700 text-accent-foreground p-6 sm:p-8 md:p-12 group hover:shadow-xl transition-all duration-300">
-              <p className="text-accent-foreground font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-6 sm:p-8 md:p-12 group hover:shadow-2xl hover:from-blue-700 hover:to-blue-900 transition-all duration-300">
+              <p className="text-white font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6 opacity-90">
                 Head Office
               </p>
-              <h3 className="text-3xl sm:text-4xl md:text-7xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
+              <h3 className="text-3xl sm:text-4xl md:text-7xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight text-white">
                 Islamabad
               </h3>
-              <p className="text-sm sm:text-base md:text-lg font-bold opacity-95 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg font-bold opacity-95 leading-relaxed text-white">
                 Central coordination and management hub
               </p>
             </div>
