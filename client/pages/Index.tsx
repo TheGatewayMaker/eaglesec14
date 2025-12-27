@@ -464,27 +464,24 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-48 bg-gradient-to-b from-background to-background/98 transition-colors duration-300">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-7xl font-black mb-8 md:mb-10 leading-tight">
-            Ready to Protect <br className="hidden md:block" />
-            What Matters?
+      <section className="py-20 md:py-40 bg-gradient-to-b from-background to-background/98 transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+          <h2 className="text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight">
+            Ready to Protect What Matters?
           </h2>
-          <p className="text-base md:text-2xl font-bold text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed">
-            Contact our security experts today for a personalized consultation
-            and secure your peace of mind
+          <p className="text-base md:text-xl font-bold text-muted-foreground mb-10 md:mb-14 leading-relaxed">
+            Contact our security experts today for a personalized consultation and secure your peace of mind
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
             <Link
               to="/contact"
-              className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-8 md:px-14 py-4 md:py-7 font-black text-base md:text-lg hover:from-blue-700 hover:to-blue-900 hover:shadow-2xl transition-all duration-300 inline-block w-full sm:w-auto text-center relative group overflow-hidden"
+              className="bg-accent text-accent-foreground px-8 md:px-12 py-4 md:py-5 font-black text-base md:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block"
             >
-              <span className="relative z-10">Start Your Consultation</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 translate-x-full group-hover:translate-x-0 transition-all duration-500"></div>
+              Start Your Consultation
             </Link>
             <Link
               to="/services"
-              className="border-2 border-accent text-accent px-8 md:px-14 py-4 md:py-7 font-black text-base md:text-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 inline-block w-full sm:w-auto text-center"
+              className="border-2 border-accent text-accent px-8 md:px-12 py-4 md:py-5 font-black text-base md:text-lg text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-300 inline-block"
             >
               View Services
             </Link>
