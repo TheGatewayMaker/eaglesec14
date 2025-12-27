@@ -455,7 +455,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="border-2 border-border p-5 sm:p-8 md:p-10 group hover:border-accent hover:shadow-lg transition-all duration-300">
+              <div className="border border-border/60 p-5 sm:p-8 md:p-10 group hover:border-accent/50 hover:shadow-2xl transition-all duration-300">
                 <p className="text-muted-foreground font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
                   National Coverage
                 </p>
