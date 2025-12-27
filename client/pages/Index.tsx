@@ -443,7 +443,7 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-10 sm:py-14 md:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-border">
+      <section className="py-10 sm:py-14 md:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-12 md:mb-16 text-center">
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight mb-4 md:mb-6">
