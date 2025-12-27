@@ -294,17 +294,17 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-background py-14 sm:py-20 md:py-32 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl text-foreground mb-4 sm:mb-6 font-black">
+      <section className="bg-background py-16 sm:py-20 md:py-32 transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 md:mb-8 font-black">
             Need Custom Security Solutions?
           </h2>
-          <p className="text-sm sm:text-base md:text-xl text-muted-foreground mb-8 sm:mb-10 font-bold">
+          <p className="text-sm md:text-lg text-muted-foreground mb-10 md:mb-12 font-bold leading-relaxed">
             Contact our team to discuss your specific security requirements
           </p>
           <Link
             to="/contact"
-            className="bg-accent text-accent-foreground px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 font-black text-sm sm:text-base md:text-lg rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
+            className="bg-accent text-accent-foreground px-8 md:px-12 py-4 md:py-5 font-black text-base md:text-lg hover:shadow-lg transition-shadow duration-300 inline-block"
           >
             Get in Touch
           </Link>
