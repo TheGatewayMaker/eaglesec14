@@ -94,7 +94,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Bodyguards Card - First */}
-            <div className="bg-card text-foreground border border-border overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+            <div className="bg-card text-foreground border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-blue-50 dark:hover:bg-blue-950/40">
               <div className="relative overflow-hidden h-48 sm:h-56 md:h-72">
                 <img
                   src="https://images.pexels.com/photos/27517900/pexels-photo-27517900.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
 
             {/* Static Guards Card - Second */}
-            <div className="bg-card text-foreground border border-border overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+            <div className="bg-card text-foreground border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-blue-50 dark:hover:bg-blue-950/40">
               <div className="relative overflow-hidden h-48 sm:h-56 md:h-72">
                 <img
                   src="https://images.pexels.com/photos/29656069/pexels-photo-29656069.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -148,7 +148,7 @@ export default function Home() {
             </div>
 
             {/* Mobile Escorts Card */}
-            <div className="bg-card text-foreground border border-border overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+            <div className="bg-card text-foreground border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-blue-50 dark:hover:bg-blue-950/40">
               <div className="relative overflow-hidden h-48 sm:h-56 md:h-72">
                 <img
                   src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
 
             {/* Security Equipment Card */}
-            <div className="bg-card text-foreground border border-border overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+            <div className="bg-card text-foreground border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-blue-50 dark:hover:bg-blue-950/40">
               <div className="relative overflow-hidden h-48 sm:h-56 md:h-72">
                 <img
                   src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800"
