@@ -56,16 +56,16 @@ export default function GuardsByRegion() {
               data={data}
               margin={{ top: 20, right: 30, left: 0, bottom: 60 }}
             >
-              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+              <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
               <XAxis
                 dataKey="name"
-                tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 700 }}
+                tick={{ fill: "#1f2937", fontSize: 12, fontWeight: 700 }}
                 angle={-45}
                 textAnchor="end"
                 height={100}
               />
               <YAxis
-                tick={{ fill: "hsl(var(--foreground))", fontSize: 12, fontWeight: 700 }}
+                tick={{ fill: "#1f2937", fontSize: 12, fontWeight: 700 }}
               />
               <Tooltip content={<CustomTooltip />} cursor={{ fill: "rgba(0, 0, 0, 0.05)" }} />
               <Bar dataKey="guards" radius={[8, 8, 0, 0]} isAnimationActive={true}>
