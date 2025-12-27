@@ -459,7 +459,7 @@ export default function Home() {
                 <p className="text-muted-foreground font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
                   National Coverage
                 </p>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 md:mb-6">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4 md:mb-6">
                   Nationwide
                 </h3>
                 <div className="text-xs sm:text-sm md:text-base font-bold text-muted-foreground space-y-1 sm:space-y-2 md:space-y-3 leading-relaxed">
