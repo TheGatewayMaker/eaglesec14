@@ -252,7 +252,7 @@ export default function Home() {
                   duration={2000}
                   className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
-                    color: 'var(--accent)',
+                    color: "var(--accent)",
                   }}
                 />
               </div>
@@ -273,7 +273,7 @@ export default function Home() {
                   duration={2000}
                   className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
-                    color: 'var(--accent)',
+                    color: "var(--accent)",
                   }}
                 />
               </div>
@@ -294,7 +294,7 @@ export default function Home() {
                   duration={2000}
                   className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
-                    color: 'var(--accent)',
+                    color: "var(--accent)",
                   }}
                 />
               </div>
@@ -315,7 +315,7 @@ export default function Home() {
                   duration={2000}
                   className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
-                    color: 'var(--accent)',
+                    color: "var(--accent)",
                   }}
                 />
               </div>
@@ -448,7 +448,9 @@ export default function Home() {
                       key={city}
                       className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white px-4 md:px-5 py-2 md:py-2.5 text-center font-black text-xs md:text-sm leading-tight transition-all duration-300 hover:shadow-lg hover:bg-foreground group cursor-pointer border border-pk-green-main/20"
                     >
-                      <span className="group-hover:text-white transition-colors duration-300">{city}</span>
+                      <span className="group-hover:text-white transition-colors duration-300">
+                        {city}
+                      </span>
                     </div>
                   ))}
                 </div>

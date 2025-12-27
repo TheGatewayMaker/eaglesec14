@@ -68,7 +68,11 @@ export default function GuardsByRegion() {
               data={data}
               margin={{ top: 20, right: 30, left: 0, bottom: 40 }}
             >
-              <CartesianGrid strokeDasharray="0" stroke="#e5e7eb" vertical={false} />
+              <CartesianGrid
+                strokeDasharray="0"
+                stroke="#e5e7eb"
+                vertical={false}
+              />
               <XAxis
                 dataKey="name"
                 tick={{ fill: "#1f2937", fontSize: 13, fontWeight: 700 }}
