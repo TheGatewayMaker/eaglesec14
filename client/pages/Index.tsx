@@ -372,7 +372,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Head Office */}
-            <div className="bg-accent text-white p-8 md:p-12 transition-shadow duration-300 hover:shadow-lg">
+            <div className="bg-accent text-white p-8 md:p-12 transition-all duration-300 hover:shadow-lg hover:opacity-95">
               <p className="text-white font-black text-xs uppercase tracking-widest mb-4 md:mb-6 opacity-90">
                 Head Office
               </p>
@@ -401,7 +401,7 @@ export default function Home() {
                   ].map((city) => (
                     <div
                       key={city}
-                      className="bg-accent text-white px-4 md:px-6 py-3 md:py-4 text-center font-black text-sm md:text-base leading-tight transition-shadow duration-300 hover:shadow-lg"
+                      className="bg-accent text-white px-4 md:px-6 py-3 md:py-4 text-center font-black text-sm md:text-base leading-tight transition-all duration-300 hover:shadow-lg hover:opacity-90"
                     >
                       {city}
                     </div>
@@ -409,7 +409,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="border border-border bg-card p-6 md:p-8 transition-shadow duration-300 hover:shadow-lg">
+              <div className="border border-border bg-card p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:border-accent/50">
                 <p className="text-muted-foreground font-black text-xs uppercase tracking-widest mb-4 md:mb-6">
                   National Coverage
                 </p>
@@ -453,7 +453,7 @@ export default function Home() {
             ].map((client) => (
               <div
                 key={client}
-                className="aspect-square border border-border bg-card p-4 md:p-6 flex items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:border-accent"
+                className="aspect-square border border-border bg-card p-4 md:p-6 flex items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:border-accent hover:bg-accent hover:text-accent-foreground"
               >
                 <p className="font-black text-xs md:text-sm leading-tight text-foreground">
                   {client}
