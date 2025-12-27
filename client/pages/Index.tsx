@@ -8,6 +8,7 @@ import {
   Zap,
   Award,
   Target,
+  ArrowRight,
 } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
